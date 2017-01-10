@@ -13,7 +13,7 @@
 		6E2871351E24DAFD0026E7BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2871331E24DAFD0026E7BD /* Main.storyboard */; };
 		6E2871371E24DAFD0026E7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E2871361E24DAFD0026E7BD /* Assets.xcassets */; };
 		6E28713A1E24DAFD0026E7BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2871381E24DAFD0026E7BD /* LaunchScreen.storyboard */; };
-		6E2871441E24DD900026E7BD /* ESMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2871431E24DD900026E7BD /* ESMediator.m */; };
+		6E2871481E24E7890026E7BD /* ESMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2871471E24E7890026E7BD /* ESMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		6E2871361E24DAFD0026E7BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E2871391E24DAFD0026E7BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E28713B1E24DAFD0026E7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E2871421E24DD900026E7BD /* ESMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMediator.h; sourceTree = "<group>"; };
-		6E2871431E24DD900026E7BD /* ESMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMediator.m; sourceTree = "<group>"; };
+		6E2871461E24E7890026E7BD /* ESMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMediator.h; sourceTree = "<group>"; };
+		6E2871471E24E7890026E7BD /* ESMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMediator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		6E2871291E24DAFD0026E7BD /* ESMediator */ = {
 			isa = PBXGroup;
 			children = (
-				6E2871411E24DD840026E7BD /* Class */,
+				6E2871451E24E7890026E7BD /* Classes */,
 				6E28712D1E24DAFD0026E7BD /* AppDelegate.h */,
 				6E28712E1E24DAFD0026E7BD /* AppDelegate.m */,
 				6E2871301E24DAFD0026E7BD /* ViewController.h */,
@@ -83,13 +83,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6E2871411E24DD840026E7BD /* Class */ = {
+		6E2871451E24E7890026E7BD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6E2871421E24DD900026E7BD /* ESMediator.h */,
-				6E2871431E24DD900026E7BD /* ESMediator.m */,
+				6E2871461E24E7890026E7BD /* ESMediator.h */,
+				6E2871471E24E7890026E7BD /* ESMediator.m */,
 			);
-			path = Class;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2871441E24DD900026E7BD /* ESMediator.m in Sources */,
+				6E2871481E24E7890026E7BD /* ESMediator.m in Sources */,
 				6E2871321E24DAFD0026E7BD /* ViewController.m in Sources */,
 				6E28712F1E24DAFD0026E7BD /* AppDelegate.m in Sources */,
 				6E28712C1E24DAFD0026E7BD /* main.m in Sources */,
