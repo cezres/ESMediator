@@ -12,10 +12,14 @@
 
 + (instancetype)sharedInstance;
 
+// 本地组件调用入口  【通过类方法调用 [targetName actionName:params]
++ (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params;
+
 // 远程App调用入口
 - (id)performActionWithUrl:(NSURL *)url completion:(void(^)(NSDictionary *info))completion;
 // 本地组件调用入口
 - (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params shouldCacheTarget:(BOOL)shouldCacheTarget;
 - (void)releaseCachedTargetWithTargetName:(NSString *)targetName;
+
 
 @end

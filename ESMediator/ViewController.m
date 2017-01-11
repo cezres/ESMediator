@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "ESMediator+Home.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
+#import "HomeInterface.h"
 
 @interface ViewController ()
 
@@ -17,6 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+//    NSMethodSignature  *signature = [[HomeInterface class] methodSignatureForSelector:@selector(setupCartCount:)];
+//    NSLog(@"%s", signature.methodReturnType);
+    
+    [ESMediator setupCartCount:10086];
+    
 }
 
 

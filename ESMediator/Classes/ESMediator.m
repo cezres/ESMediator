@@ -8,6 +8,7 @@
 
 #import "ESMediator.h"
 #import <objc/runtime.h>
+#import <objc/message.h>
 
 @interface ESMediator ()
 
@@ -26,6 +27,43 @@
     });
     return mediator;
 }
+
++ (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params {
+    Class target = NSClassFromString(targetName);
+    if (!target) {
+        return nil;
+    }
+    @try {
+        NSString *actionString = [NSString stringWithFormat:@"%@:", actionName];
+        SEL action = NSSelectorFromString(actionString);
+        return ((id (*)(Class, SEL, id))objc_msgSend)(target, action, params);
+    } @catch (NSException *exception) {
+        @try {
+            NSString *actionString = [NSString stringWithFormat:@"%@WithParams:", actionName];
+            SEL action = NSSelectorFromString(actionString);
+            return ((id (*)(Class, SEL, id))objc_msgSend)(target, action, params);
+        } @catch (NSException *exception) {
+            return nil;
+        }
+    }
+}
+
++ (id)performClass:(Class)class selector:(SEL)selector params:(NSDictionary *)params {
+    
+    NSMethodSignature  *signature = [class instanceMethodSignatureForSelector:selector];
+    NSLog(@"%s", signature.methodReturnType);
+    
+    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+    if (params) {
+        [invocation setArgument:(__bridge void * _Nonnull)(params) atIndex:0];
+    }
+    [invocation invoke];
+    
+    
+    
+    return nil;
+}
+
 
 /*
  scheme://[target]/[action]?[params]
