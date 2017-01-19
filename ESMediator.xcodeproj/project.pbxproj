@@ -13,9 +13,9 @@
 		6E2871351E24DAFD0026E7BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2871331E24DAFD0026E7BD /* Main.storyboard */; };
 		6E2871371E24DAFD0026E7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E2871361E24DAFD0026E7BD /* Assets.xcassets */; };
 		6E28713A1E24DAFD0026E7BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2871381E24DAFD0026E7BD /* LaunchScreen.storyboard */; };
-		6E2871481E24E7890026E7BD /* ESMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2871471E24E7890026E7BD /* ESMediator.m */; };
 		6E2871511E250AD40026E7BD /* HomeInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2871501E250AD40026E7BD /* HomeInterface.m */; };
 		6E2871571E250B4C0026E7BD /* ESMediator+Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2871561E250B4C0026E7BD /* ESMediator+Home.m */; };
+		6E34A9D51E305FB50044C68E /* ESMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E34A9D41E305FB50044C68E /* ESMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +29,12 @@
 		6E2871361E24DAFD0026E7BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E2871391E24DAFD0026E7BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E28713B1E24DAFD0026E7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E2871461E24E7890026E7BD /* ESMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMediator.h; sourceTree = "<group>"; };
-		6E2871471E24E7890026E7BD /* ESMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMediator.m; sourceTree = "<group>"; };
 		6E28714F1E250AD40026E7BD /* HomeInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeInterface.h; sourceTree = "<group>"; };
 		6E2871501E250AD40026E7BD /* HomeInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeInterface.m; sourceTree = "<group>"; };
 		6E2871551E250B4C0026E7BD /* ESMediator+Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESMediator+Home.h"; sourceTree = "<group>"; };
 		6E2871561E250B4C0026E7BD /* ESMediator+Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ESMediator+Home.m"; sourceTree = "<group>"; };
+		6E34A9D31E305FB50044C68E /* ESMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMediator.h; sourceTree = "<group>"; };
+		6E34A9D41E305FB50044C68E /* ESMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMediator.m; sourceTree = "<group>"; };
 		6E3D4CC31E26292700E39E7E /* ESMediator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ESMediator.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				6E3D4CC31E26292700E39E7E /* ESMediator.podspec */,
+				6E34A9D21E305FB50044C68E /* Classes */,
 				6E2871291E24DAFD0026E7BD /* ESMediator */,
 				6E2871281E24DAFD0026E7BD /* Products */,
 			);
@@ -69,7 +70,6 @@
 		6E2871291E24DAFD0026E7BD /* ESMediator */ = {
 			isa = PBXGroup;
 			children = (
-				6E2871451E24E7890026E7BD /* Classes */,
 				6E28712D1E24DAFD0026E7BD /* AppDelegate.h */,
 				6E28712E1E24DAFD0026E7BD /* AppDelegate.m */,
 				6E2871301E24DAFD0026E7BD /* ViewController.h */,
@@ -95,11 +95,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6E2871451E24E7890026E7BD /* Classes */ = {
+		6E34A9D21E305FB50044C68E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6E2871461E24E7890026E7BD /* ESMediator.h */,
-				6E2871471E24E7890026E7BD /* ESMediator.m */,
+				6E34A9D31E305FB50044C68E /* ESMediator.h */,
+				6E34A9D41E305FB50044C68E /* ESMediator.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -176,11 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2871481E24E7890026E7BD /* ESMediator.m in Sources */,
 				6E2871511E250AD40026E7BD /* HomeInterface.m in Sources */,
 				6E2871321E24DAFD0026E7BD /* ViewController.m in Sources */,
 				6E28712F1E24DAFD0026E7BD /* AppDelegate.m in Sources */,
 				6E28712C1E24DAFD0026E7BD /* main.m in Sources */,
+				6E34A9D51E305FB50044C68E /* ESMediator.m in Sources */,
 				6E2871571E250B4C0026E7BD /* ESMediator+Home.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

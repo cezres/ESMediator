@@ -10,6 +10,6 @@
 
 @interface HomeInterface : NSObject
 
-+ (id)setupCartCount:(NSDictionary *)params;
+//+ (id)setupCartCount:(NSDictionary *)params;
 
 @end
